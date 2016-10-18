@@ -9,4 +9,6 @@ ROUTER.draw do
   # Example
   # get Regexp.new("^/dogs$"), DogsController, :index
   get Regexp.new("^/$"), StaticPagesController, :root
+  get Regexp.new("^/users$"), UsersController, :index
+  post Regexp.new("^/users$"), UsersController, :create
 end

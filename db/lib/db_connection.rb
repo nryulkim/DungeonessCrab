@@ -1,6 +1,7 @@
 require 'pg'
 require 'uri'
 
+PRINT_QUERIES = true
 MIGRATION_FILES = Dir["db/migrations/*.sql"]
 
 class DBConnection
@@ -14,6 +15,8 @@ class DBConnection
       port: uri.port,
       dbname: uri.path[1..-1]
     )
+
+    self.migrate
   end
 
   def self.migrate
@@ -35,21 +38,34 @@ class DBConnection
   end
 
   def self.instance
-    open if @db.nil?
+    open if @postgres.nil?
 
-    @db
+    @postgres
   end
 
   def self.execute(*args)
-    print_query(*args)
-    instance.execute(*args)
-  end
+    args.flatten!
 
-  def self.last_insert_row_id
-    instance.last_insert_row_id
+    print_query(*args)
+    query = self.number_placeholders(args.unshift[0])
+    params = args[1..-1]
+    params.flatten!
+    instance.exec(query, params)
   end
 
   private
+
+  def self.number_placeholders(query_string)
+    count = 0
+    query_string.chars.map do |char|
+      if char == "?"
+        count += 1
+        "$#{count}"
+      else
+        char
+      end
+    end.join("")
+  end
 
   def self.ensure_migrations_table
     table = instance.exec(<<-SQL)
@@ -58,7 +74,7 @@ class DBConnection
 
     unless table[0]['exists']
       instance.exec(<<-SQL)
-        CREATE_TABLE migrations(
+        CREATE TABLE migrations(
           id SERIAL PRIMARY KEY,
           filename VARCHAR(255) NOT NULL
         )
