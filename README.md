@@ -13,7 +13,7 @@ Dungeoness Crab is a rogue-like hack and slash game built using React.js, HTML, 
 - [ ] Enemy characters with health / attack (exponential to level)
   - [ ] Enemy characters give exp after death
 
-## Wireframs
+## Wireframe
 
 This app will consist of a single screen with a game board, user statistics, and nav links to the Github, my LinkedIn, and an About modal.
 
