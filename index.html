@@ -1,7 +1,9 @@
 <head>
   <meta charset="utf-8">
   <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Roboto|Shadows+Into+Light" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/reset.css">
   <link rel="stylesheet" href="./assets/stylesheets/application.css">
 </head>
@@ -9,10 +11,32 @@
 <body>
   <h1>Dungeoness Crab</h1>
   <div id="display">
-    <div id="user-info"></div>
+    <div id="user-info" class="column">
+      <h1 id="name"></h1>
+      <ul>
+        <li>Level</li>
+        <li id="lvl"></li>
+      </ul>
+      <ul>
+        <li>Health</li>
+        <li id="hp"></li>
+      </ul>
+      <ul>
+        <li>Attack</li>
+        <li id="att"></li>
+      </ul>
+      <ul>
+        <li>Defence</li>
+        <li id="def"></li>
+      </ul>
+      <ul>
+        <li>Speed</li>
+        <li id="spd"></li>
+      </ul>
+    </div>
     <canvas id="board" width="500" height="500"></canvas>
 
-    <div id="links">
+    <div id="links" class="column">
       <h1>Links</h1>
       <div id="buttons">
         <a href="https://www.linkedin.com/in/namryulkim" class="button">Github</a>
