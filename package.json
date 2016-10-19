@@ -1,0 +1,30 @@
+{
+  "name": "dungeoness_crab",
+  "version": "1.0.0",
+  "description": "RogueLike Dungeon Game",
+  "main": "lib/dcrab.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/.bin/webpack",
+    "w-w": "./node_modules/.bin/webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nryulkim/DungeonessCrab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nryulkim/DungeonessCrab/issues"
+  },
+  "homepage": "https://github.com/nryulkim/DungeonessCrab#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "webpack": "^1.13.2"
+  }
+}
