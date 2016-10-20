@@ -30,7 +30,11 @@ body > h1{
   flex-direction: row;
   justify-content: space-around;
   font-size: 20px;
-  padding: 10px 0;
+  padding: 10px ;
+}
+
+#user-info li{
+  margin: 0 10px;
 }
 
 #board{
