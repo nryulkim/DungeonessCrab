@@ -5,8 +5,8 @@ body > h1{
   font-weight: 700;
   color: #fff;
   background-color: #555;
-  border-bottom: 2px solid #c00;
-  border-top: 2px solid #c00;
+  border-bottom: 2px solid #004000;
+  border-top: 2px solid #004000;
   padding: 10px;
   margin-bottom: 20px;
   letter-spacing: 5px;
@@ -28,7 +28,7 @@ body > h1{
 #user-info > ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 20px;
   padding: 10px ;
 }
@@ -39,13 +39,14 @@ body > h1{
 
 #board{
   background-color: #373737;
-  box-shadow: 0 0 3px #aaa;
+  box-shadow: 0 0 10px #000;
   margin: 0 20px;
   border-radius: 3px;
 }
 
 .column{
-  width: 250px;
+  box-shadow: 0 0 10px #000;
+  width: 200px;
   height: 500px;
   background-color: #ccc;
 
@@ -65,7 +66,7 @@ body > h1{
   font-weight: bold;
   letter-spacing: 10px;
   background-color: #888;
-  border-bottom: 2px solid #c00;
+  border-bottom: 2px solid #040;
   padding: 10px 0;
   height: 30px;
   border-top-left-radius: 3px;
@@ -85,7 +86,7 @@ body > h1{
   font-family: 'Roboto', sans-serif;
   background-color: #aaa;
   border-radius: 5px;
-  box-shadow: 0 0 3px #888;
+  box-shadow: 0 0 2px #333;
   text-decoration: none;
   color: #444;
   padding: 10px 20px;
@@ -99,5 +100,5 @@ body > h1{
 
 .button:hover{
   background-color: #888;
-  box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 5px #000;
 }
