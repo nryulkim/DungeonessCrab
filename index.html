@@ -3,8 +3,6 @@
   <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
   <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="./lib/util/ndgmr.Collision.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/reset.css">
   <link rel="stylesheet" href="./assets/stylesheets/application.css">
@@ -13,31 +11,31 @@
 <body>
   <h1>Dungeoness Crab</h1>
   <div id="display">
-    <div id="user-info" class="column">
-      <h1 id="name"></h1>
+    <div class="column user-info">
+      <h1 class="name"></h1>
       <ul>
         <li>Level</li>
-        <li id="lvl"></li>
+        <li class="lvl"></li>
       </ul>
       <ul>
         <li>Health</li>
-        <li id="hp"></li>
+        <li class="hp"></li>
       </ul>
       <ul>
         <li>Attack</li>
-        <li id="att"></li>
+        <li class="att"></li>
       </ul>
       <ul>
         <li>Defence</li>
-        <li id="def"></li>
+        <li class="def"></li>
       </ul>
       <ul>
         <li>Speed</li>
-        <li id="spd"></li>
+        <li class="spd"></li>
       </ul>
       <ul>
         <li>Exp</li>
-        <li id="exp"></li>
+        <li class="exp"></li>
       </ul>
     </div>
     <canvas id="board" width="500" height="500"></canvas>
@@ -52,4 +50,38 @@
     </div>
   </div>
   <script src="./lib/bundle.js"></script>
+
+  <div id="modal" class="modalDialog">
+    <div>
+      <p class="close">X</p>
+      <div>
+        <h2>Level UP! ------------ Attributes: </h2>
+        <h2 id="attr"></h2>
+      </div>
+      <div>
+        <ul>
+          <li>Attack</li>
+          <div class="stat">
+            <li class="att"></li>
+            <li class="plus" data-stat="att">+</li>
+          </div>
+        </ul>
+        <ul>
+          <li>Defence</li>
+          <div class="stat">
+            <li class="def"></li>
+            <li class="plus" data-stat="def">+</li>
+          </div>
+        </ul>
+        <ul>
+          <li>Speed</li>
+          <div class="stat">
+            <li class="spd"></li>
+            <li class="plus" data-stat="spd">+</li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </body>
