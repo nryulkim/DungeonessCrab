@@ -54,7 +54,6 @@
 
   <div id="modal" class="modalDialog">
     <div>
-      <p class="close">X</p>
       <div>
         <h2>Level UP! ------------ Attributes: </h2>
         <h2 id="attr"></h2>
@@ -85,9 +84,8 @@
     </div>
   </div>
 
-  <div id="initial-modal" class="modalDialog show">
+  <div id="initial-modal" class="modalDialog">
     <div>
-      <p class="close">X</p>
       <div>
         <h2>Dungeoness Crab</h2>
       </div>
@@ -96,11 +94,21 @@
       </p>
 
       <h3>First off... What is your name?</h3>
-      <form>
+      <form autocomplete="off">
         <input id="name-input" type="text" name="name" value="">
         <button id="start" type="submit" class="button">Let's Play</button>
       </form>
     </div>
+  </div>
+
+  <div id="end-modal" class="modalDialog">
+    <div>
+      <div>
+        <h2>You Died!</h2>
+      </div>
+      <div class="button" id="restart">
+        Play Again?
+      <div>
   </div>
 
 </body>
