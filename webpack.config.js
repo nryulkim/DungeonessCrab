@@ -4,7 +4,7 @@ module.exports = {
   context: __dirname,
   entry: "./lib/dcrabs.js",
   output: {
-    path: path.join(__dirname, 'lib'),
+    path: path.join(__dirname),
     filename: "bundle.js"
   },
   module: {
