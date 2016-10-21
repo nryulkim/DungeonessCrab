@@ -52,6 +52,7 @@
   box-shadow: 0 0 3px #555;
   padding: 0 2px;
   font-size: 14px;
+  margin-left: 30px;
 }
 
 .plus:hover{
@@ -80,7 +81,7 @@
 .stat {
   display: flex;
   justify-content: space-between;
-  width: 30px;
+  width: 60px;
 }
 
 
