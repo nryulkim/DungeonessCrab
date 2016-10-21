@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/reset.css">
   <link rel="stylesheet" href="./assets/stylesheets/application.css">
+  <link rel="stylesheet" href="./assets/stylesheets/modal.css">
 </head>
 
 <body>
@@ -81,6 +82,24 @@
           </div>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <div id="initial-modal" class="modalDialog show">
+    <div>
+      <p class="close">X</p>
+      <div>
+        <h2>Dungeoness Crab</h2>
+      </div>
+      <p class="text">
+        Dungeoness Crab is a rogue-like dungeon crawling game. <br><br> <strong>The goal is to survive!</strong>
+      </p>
+
+      <h3>First off... What is your name?</h3>
+      <form>
+        <input id="name-input" type="text" name="name" value="">
+        <button id="start" type="submit" class="button">Let's Play</button>
+      </form>
     </div>
   </div>
 
