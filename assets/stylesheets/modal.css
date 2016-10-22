@@ -35,16 +35,6 @@
   padding: 10px 0;
 }
 
-.modalDialog div > h2:first-of-type{
-  float: left;
-  margin-left: 30px;
-}
-
-.modalDialog div > h2:last-of-type{
-  float: right;
-  margin-right: 30px;
-}
-
 .plus{
   border-radius: 5px;
   background-color: #bbb;
@@ -78,8 +68,12 @@
 
 .stat {
   display: flex;
-  justify-content: space-between;
-  width: 60px;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.modalDialog ul{
+  margin-left: 20px;
 }
 
 
@@ -139,4 +133,10 @@ strong{
   text-align: center;
   color: #d00;
   font-weight: bolder;
+}
+
+.attrs{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
 }
