@@ -27,8 +27,7 @@ body > h1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  vertical-align:
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px ;
 }
 
@@ -63,8 +62,8 @@ body > h1{
 }
 
 .column h1{
-  font-size: 30px;
-  margin: 40px 0;
+  font-size: 26px;
+  margin: 40px 0 20px;
 }
 
 #links{
