@@ -16,75 +16,103 @@
 
 <body>
   <h1>Dungeoness Crab</h1>
-  <div id="display">
-    <div class="column user-info">
-      <h1 class="name"></h1>
-      <ul>
-        <li>Level</li>
-        <li class="lvl"></li>
-      </ul>
-      <ul>
-        <li>Health</li>
-        <li class="hp"></li>
-      </ul>
-      <ul>
-        <li>Attack</li>
-        <li class="att"></li>
-      </ul>
-      <ul>
-        <li>Defence</li>
-        <li class="def"></li>
-      </ul>
-      <ul>
-        <li>Speed</li>
-        <li class="spd"></li>
-      </ul>
-      <ul>
-        <li>Exp</li>
-        <li class="exp"></li>
-      </ul>
+  <div class="game-screen">
+    <div id="display">
+      <div class="column user-info">
+        <h1 class="name"></h1>
+        <ul>
+          <li>Level</li>
+          <li class="lvl"></li>
+        </ul>
+        <ul>
+          <li>Health</li>
+          <li class="hp"></li>
+        </ul>
+        <ul>
+          <li>Attack</li>
+          <li class="att"></li>
+        </ul>
+        <ul>
+          <li>Defence</li>
+          <li class="def"></li>
+        </ul>
+        <ul>
+          <li>Speed</li>
+          <li class="spd"></li>
+        </ul>
+        <ul>
+          <li>Exp</li>
+          <li class="exp"></li>
+        </ul>
 
-      <div id="inv">
-        <div class="row">
-          <div class="item" id="item0">
-            <a class="delete" data-id="0">X</a>
-            <a class="equip" data-id="0">E</a>
+        <div id="inv">
+          <div class="row">
+            <div class="item" id="item0">
+              <a class="delete" data-id="0">X</a>
+              <a class="equip" data-id="0">E</a>
+            </div>
+            <div class="item" id="item1">
+              <a class="delete" data-id="1">X</a>
+              <a class="equip" data-id="1">E</a>
+            </div>
+            <div class="item" id="item2">
+              <a class="delete" data-id="2">X</a>
+              <a class="equip" data-id="2">E</a>
+            </div>
           </div>
-          <div class="item" id="item1">
-            <a class="delete" data-id="1">X</a>
-            <a class="equip" data-id="1">E</a>
-          </div>
-          <div class="item" id="item2">
-            <a class="delete" data-id="2">X</a>
-            <a class="equip" data-id="2">E</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="item" id="item3">
-            <a class="delete" data-id="3">X</a>
-            <a class="equip" data-id="3">E</a>
-          </div>
-          <div class="item" id="item4">
-            <a class="delete" data-id="4">X</a>
-            <a class="equip" data-id="4">E</a>
-          </div>
-          <div class="item" id="item5">
-            <a class="delete" data-id="5">X</a>
-            <a class="equip" data-id="5">E</a>
+          <div class="row">
+            <div class="item" id="item3">
+              <a class="delete" data-id="3">X</a>
+              <a class="equip" data-id="3">E</a>
+            </div>
+            <div class="item" id="item4">
+              <a class="delete" data-id="4">X</a>
+              <a class="equip" data-id="4">E</a>
+            </div>
+            <div class="item" id="item5">
+              <a class="delete" data-id="5">X</a>
+              <a class="equip" data-id="5">E</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <canvas id="board" width="500" height="500"></canvas>
+      <canvas id="board" width="500" height="500"></canvas>
 
-    <div id="links" class="column">
-      <h1>Links</h1>
-      <div id="buttons">
-        <a href="https://www.linkedin.com/in/namryulkim" class="button">Github</a>
-        <a href="https://www.linkedin.com/in/namryulkim" class="button">LinkedIn</a>
-        <a href="https://github.com/nryulkim/DungeonessCrab" class="button">Portfolio</a>
+      <div id="links" class="column">
+        <h1>Links</h1>
+        <div id="buttons">
+          <a href="https://www.linkedin.com/in/namryulkim" class="button">Github</a>
+          <a href="https://www.linkedin.com/in/namryulkim" class="button">LinkedIn</a>
+          <a href="https://github.com/nryulkim/DungeonessCrab" class="button">Portfolio</a>
+        </div>
       </div>
     </div>
+    <button id="how-to-button" class="button">How To Play</button>
+  </div>
+  <div id="how-to">
+    <h1>How to Play</h1>
+    <h2>Movement</h2>
+    <p>
+      Move around with W A S D.
+    </p>
+
+    <h2>Attacking</h2>
+    <p>
+      Left click in the direction you would like to attack.
+      <br>
+      You do not need to click on the crabs directly.
+    </p>
+
+    <h2>Items</h2>
+    <p>
+      You can equip up to 3 items and hold up to 6 items.<br><br>
+      If you pick up an item when you have a full inventory, the item will disappear!<br><br>
+      You can destroy an item by pressing the red <span class="red">X</span>.<br><br>
+      Equip an item by pressing the green <span class="green">E</span>.<br>
+      <br>
+      Item's that you have equipped will be saved upon death. Retrieve them by using the same name.<br>
+    </p>
+    <button id="how-to-close" class="button">Close</button>
   </div>
 
   <div id="modal" class="modalDialog">
@@ -149,9 +177,9 @@
       </div>
       <div class="button" id="restart">
         Play Again?
-      <div>
+      </div>
+    </div>
   </div>
-
   <script src="./lib/bundle.js"></script>
 
 </body>

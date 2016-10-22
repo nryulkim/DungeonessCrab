@@ -140,3 +140,52 @@ strong{
   display: flex;
   justify-content: space-between;
 }
+
+.game-screen{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#how-to-button{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40%;
+}
+
+#how-to{
+  position: absolute;
+  background: url("../art/parchment.png");
+  background-size: contain;
+  width: 500px;
+  height: 700px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#how-to h1{
+  margin: 30px 0 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#how-to h2{
+  margin: 20px 10px;
+  font-size: 18px;
+  color: #555;
+  border-bottom: 1px solid #555;
+}
+
+#how-to p{
+  margin: 0 10px;
+}
+
+#how-to-close{
+  padding: 10px 20px;
+  margin: 20px auto;
+}

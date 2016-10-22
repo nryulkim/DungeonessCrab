@@ -81,6 +81,7 @@ body > h1{
 
 
 .button{
+  font-family: 'Press Start 2P', cursive;
   border: 0;
   cursor: pointer;
   background-color: rgb(173, 135, 0);
@@ -97,4 +98,10 @@ body > h1{
 .button:hover{
   background-color: rgb(134, 101, 5);
   box-shadow: 0 0 5px #000;
+}
+.red{
+  color: #d00;
+}
+.green{
+  color: #0d0;
 }
