@@ -1,0 +1,36 @@
+#inv{
+  display: flex;
+  width: 245px;
+  height: 155px;
+  margin: 10px auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#inv > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item{
+  box-shadow: 0 0 3px #000;
+  width: 75px;
+  height: 75px;
+  background-color: rgba(235, 235, 235, 0.5);
+}
+
+.weapon{
+  background: url("../art/items/sword.png");
+  background-size: contain;
+}
+
+.armor{
+  background: url("../art/items/armor.png");
+  background-size: contain;
+}
+
+.boots{
+  background: url("../art/items/boots.png");
+  background-size: contain;
+}
