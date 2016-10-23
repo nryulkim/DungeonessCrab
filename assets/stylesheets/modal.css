@@ -105,6 +105,7 @@ strong{
 #initial-modal input{
   border: none;
   box-shadow: 0 0 3px #444;
+  font-family: 'Press Start 2P', cursive;
   font-size: 24px;
   border-radius: 5px;
   background-color: #ddd;
