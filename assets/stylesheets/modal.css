@@ -68,7 +68,7 @@
 
 .stat {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 150px;
 }
 
@@ -134,6 +134,55 @@ strong{
   text-align: center;
   color: #d00;
   font-weight: bolder;
+}
+
+.tokens{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.all-buffs{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+  justify-content: space-around;
+}
+
+.buff{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.buff h3{
+  position: absolute;
+}
+
+.price{
+  top: 25px;
+}
+
+.multiplier{
+  bottom: 25px;
+}
+
+.buff-up{
+  margin: 10px 0;
+  width: 130px;
+  height: 130px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: lavenderblush;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 1px 0 6px #555;
+}
+
+.buff-up:hover{
+  box-shadow: 2px 1px 6px #aaa;
+  background-color: #0d0;
+  color: #fff;
 }
 
 .attrs{

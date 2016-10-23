@@ -145,6 +145,11 @@
       <br>
       Items that you have equipped will be saved upon death. Retrieve them by using the same name.<br>
     </p>
+
+    <h2>Prestige</h2>
+    <p>
+      Kill as many crabs as you can before you die! Each crab will give you 1 token. After you die, you can spend these tokens to permanently power-up your character!
+    </p>
     <button id="how-to-close" class="button">Close</button>
   </div>
   <div id="leaderboard" class="board">
@@ -214,6 +219,34 @@
       <div>
         <h2>You Died!</h2>
       </div>
+
+      <div class="tokens">
+        <h3>You have </h3><h3 id='tokens'></h3><h3> tokens</h3>
+      </div>
+      <div class="all-buffs">
+        <div class="buff maxHpBuff">
+          <h3 class="price"></h3>
+          <button type="button" data-type="maxHp" class="buff-up">Max HP</button>
+          <h3 class="multiplier"></h3>
+        </div>
+        <div class="buff attBuff">
+          <h3 class="price"></h3>
+          <button type="button" data-type="att" class="buff-up">Attack</button>
+          <h3 class="multiplier"></h3>
+        </div>
+        <div class="buff defBuff">
+          <h3 class="price"></h3>
+          <button type="button" data-type="def" class="buff-up">Defence</button>
+          <h3 class="multiplier"></h3>
+        </div>
+        <div class="buff spdBuff">
+          <h3 class="price"></h3>
+          <button type="button" data-type="spd" class="buff-up">Speed</button>
+          <h3 class="multiplier"></h3>
+        </div>
+      </div>
+
+
       <div class="button" id="restart">
         Play Again?
       </div>

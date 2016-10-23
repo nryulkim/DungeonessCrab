@@ -23,6 +23,10 @@ Dungeoness Crab is a rogue-like hack and slash game built using JavaScript, HTML
 - You can remove the item by clicking on the red X.
 - Items that you have equipped is saved upon death. To load your character, use the same name.
 
+### Prestige
+- Killing crabs give you 1 token per crab.
+- After death you can buy persistent power ups for your character that will increase your base stats by a multiplier (does not boost equipment).
+
 ## Future Improvements
 
 ### Map generation
