@@ -144,17 +144,14 @@ strong{
 .game-screen{
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
 }
 
-#how-to-button{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 40%;
+.display-buttons{
+
 }
 
-#how-to{
+.board{
   position: absolute;
   background: url("../art/parchment.png");
   background-size: contain;
@@ -188,4 +185,44 @@ strong{
 #how-to-close{
   padding: 10px 20px;
   margin: 20px auto;
+}
+
+#leaderboard{
+  transform: translate(-50%, -35%);
+  justify-content: space-between;
+}
+
+#leaderboard h1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  border-bottom: 3px solid #000;
+}
+
+#leaderboard .list{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.leader-board-item{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 15px 40px;
+}
+
+.leader-board-item li{
+  list-style: none;
+}
+
+.leader-board-item li:first-child{
+  text-transform: uppercase;
+}
+
+.leader-board-item li:last-child{
+}
+
+#leaderboard-close{
+  margin-bottom: 40px;
 }

@@ -117,9 +117,12 @@
         </div>
       </div>
     </div>
-    <button id="how-to-button" class="button">How To Play</button>
+    <div class="display-buttons">
+      <button id="how-to-button" class="button">How To Play</button>
+      <button id="leaderboard-button" class="button">Leaderboard</button>
+    </div>
   </div>
-  <div id="how-to">
+  <div id="how-to" class="board">
     <h1>How to Play</h1>
     <h2>Movement</h2>
     <p>
@@ -143,6 +146,12 @@
       Items that you have equipped will be saved upon death. Retrieve them by using the same name.<br>
     </p>
     <button id="how-to-close" class="button">Close</button>
+  </div>
+  <div id="leaderboard" class="board">
+    <h1>Leaderboard</h1>
+    <div class="list">
+    </div>
+    <button id="leaderboard-close" class="button">Close</button>
   </div>
 
   <div id="modal" class="modalDialog">
