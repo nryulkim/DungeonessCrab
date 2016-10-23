@@ -23,22 +23,27 @@
 }
 
 .bomb{
-  background: url("../art/items/bomb.png");
+  background: url("../art/items/bomb2.png");
+  background-size: contain;
+}
+
+.potion{
+  background: url("../art/items/potion.png");
   background-size: contain;
 }
 
 .weapon{
-  background: url("../art/items/sword.png");
+  background: url("../art/items/sword2.png");
   background-size: contain;
 }
 
 .armor{
-  background: url("../art/items/armor.png");
+  background: url("../art/items/armor2.png");
   background-size: contain;
 }
 
 .boots{
-  background: url("../art/items/boots.png");
+  background: url("../art/items/boots2.png");
   background-size: contain;
 }
 
