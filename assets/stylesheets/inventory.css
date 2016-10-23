@@ -22,6 +22,11 @@
   border: outset 1px;
 }
 
+.bomb{
+  background: url("../art/items/bomb.png");
+  background-size: contain;
+}
+
 .weapon{
   background: url("../art/items/sword.png");
   background-size: contain;
