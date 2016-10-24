@@ -4,10 +4,24 @@ body > h1{
   font-weight: 700;
   color: #fb9700;
   padding: 10px;
-  margin-bottom: 30px;
   letter-spacing: 5px;
   background: url("../art/background.gif");
   background-size: contain;
+}
+
+.sign{
+  margin: 10px auto;
+  background: #fb9700;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0 0 3px #000;
+  border-radius: 5px;
+}
+
+.sign h3{
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
 }
 
 #display{
