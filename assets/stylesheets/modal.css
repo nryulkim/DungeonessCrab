@@ -35,19 +35,32 @@
   padding: 10px 0;
 }
 
-.plus{
+.stat-bundle{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.stat-change{
   border-radius: 5px;
   background-color: #bbb;
   box-shadow: 0 0 3px #555;
   padding: 0 4px;
   font-size: 14px;
-  margin-left: 30px;
 }
 
-.plus:hover{
+.stat-change:hover{
   background-color: #0a0;
   box-shadow: 0 0 5px #000;
   cursor: pointer;
+}
+
+.plus{
+  margin-left: 30px;
+}
+
+.neg{
+  margin-left: 10px;
 }
 
 .show {
@@ -69,7 +82,7 @@
 .stat {
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  width: 200px;
 }
 
 .modalDialog ul{
