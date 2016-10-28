@@ -38,7 +38,7 @@
 .stat-bundle{
   display: flex;
   flex-direction: row;
-  
+
 }
 
 .stat-change{
@@ -243,6 +243,7 @@ strong{
 
 #how-to p{
   margin: 0 10px;
+  font-size: 12px;
 }
 
 #how-to-close{
