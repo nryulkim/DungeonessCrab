@@ -12,6 +12,21 @@
       type="image/x-icon"
       href="./assets/favicon.ico" />
   <title>Dungeoness Crab</title>
+
+  <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-database.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCZOfdQF5dNutqX6Fo8jDh2Bu7TThN0Tmc",
+      authDomain: "dcrabs-6eb8a.firebaseapp.com",
+      databaseURL: "https://dcrabs-6eb8a.firebaseio.com",
+      storageBucket: "",
+      messagingSenderId: "1075698860590"
+    };
+    firebase.initializeApp(config);
+  </script>
 </head>
 
 <body>
@@ -255,7 +270,7 @@
       </div>
 
 
-      <div class="button" id="restart">
+      <div class="button" id="restart-button">
         Play Again?
       </div>
     </div>
