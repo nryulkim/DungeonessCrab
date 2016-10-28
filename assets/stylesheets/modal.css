@@ -280,13 +280,6 @@ strong{
   list-style: none;
 }
 
-.leader-board-item li:first-child{
-  text-transform: uppercase;
-}
-
-.leader-board-item li:last-child{
-}
-
 #leaderboard-close{
   margin-bottom: 40px;
 }
