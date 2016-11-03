@@ -133,6 +133,11 @@ strong{
   justify-content: space-between;
 }
 
+#initial-modal label{
+  text-align: center;
+  margin: 15px 0 5px;
+}
+
 #initial-modal button{
   margin: 0 auto;
   margin-top: 10px;
